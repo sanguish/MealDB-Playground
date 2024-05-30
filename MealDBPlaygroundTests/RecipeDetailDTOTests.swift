@@ -19,10 +19,19 @@ final class RecipeDetailDTOTests : XCTestCase {
     }
 
     func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+        let id = "1"
+        let name = "Mac and Cheese"
+        let category = "Lunch"
+        let instructions = "These are the instructions"
+
+        let detailDTO = RecipeDetailDTO(id: id,
+                                        name: name,
+                                        category: category,
+                                        instructions: instructions)
+        let recipeDetail = RecipeDetail(fromDTO: detailDTO)
+        XCTAssertEqual(recipeDetail.id, id)
+        XCTAssertEqual(recipeDetail.name, name)
+        XCTAssertEqual(recipeDetail.category, category)
+        XCTAssertEqual(recipeDetail.instructions, instructions)
     }
 }
