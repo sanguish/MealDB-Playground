@@ -104,6 +104,68 @@ class RecipeDetailDTO: Decodable {
         case measure19 = "strMeasure19"
         case measure20 = "strMeasure20"
     }
+
+    init(id: String,
+         name: String,
+         category: String,
+         instructions: String,
+         mealThumbnailURL: URL? = nil,
+         keywords: String? = nil,
+         ingredient1: String? = nil,
+         ingredient2: String? = nil,
+         measure1: String? = nil,
+         measure2: String? = nil) {
+        self.id = id
+        self.name = name
+        self.category = category
+        self.instructions = instructions
+        self.mealThumbnailURL = mealThumbnailURL
+        self.keywords = keywords
+        self.ingredient1 = ingredient1
+        self.ingredient2 = ingredient2
+        self.measure1 = measure1
+        self.measure2 = measure2
+
+        self.ingredient3 = nil
+        self.ingredient4 = nil
+        self.ingredient5 = nil
+        self.ingredient6 = nil
+        self.ingredient7 = nil
+        self.ingredient8 = nil
+        self.ingredient9 = nil
+        self.ingredient10 = nil
+        self.ingredient11 = nil
+        self.ingredient12 = nil
+        self.ingredient13 = nil
+        self.ingredient14 = nil
+        self.ingredient15 = nil
+        self.ingredient16 = nil
+        self.ingredient17 = nil
+        self.ingredient18 = nil
+        self.ingredient19 = nil
+        self.ingredient20 = nil
+        self.measure3 = nil
+        self.measure4 = nil
+        self.measure5 = nil
+        self.measure6 = nil
+        self.measure7 = nil
+        self.measure8 = nil
+        self.measure9 = nil
+        self.measure10 = nil
+        self.measure11 = nil
+        self.measure12 = nil
+        self.measure13 = nil
+        self.measure14 = nil
+        self.measure15 = nil
+        self.measure16 = nil
+        self.measure17 = nil
+        self.measure18 = nil
+        self.measure19 = nil
+        self.measure20 = nil
+    }
+
+
+
 }
 
 // MARK: RecipeDetailDTO -> RecipeDetail
