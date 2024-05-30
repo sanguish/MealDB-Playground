@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "31AF833A-F117-4187-9733-742C6C4A91E7",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:MealDBPlayground.xcodeproj",
+      "identifier" : "C8CA840A2C085E78002AF97E",
+      "name" : "MealDBPlayground"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:MealDBPlayground.xcodeproj",
+        "identifier" : "C8CA841B2C085E78002AF97E",
+        "name" : "MealDBPlaygroundTests"
+      }
+    }
+  ],
+  "version" : 1
+}
